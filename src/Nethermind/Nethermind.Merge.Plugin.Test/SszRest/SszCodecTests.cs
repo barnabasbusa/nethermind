@@ -533,7 +533,7 @@ public class SszCodecTests
     public void DecodeFcuV4Request_spec_layout_roundtrips_parent_beacon_block_root_and_slot_number()
     {
         ulong expectedSlot = 0xAABBCCDD_11223344UL;
-        ulong expectedTargetGasLimit = 60_000_000UL;
+        ulong expectedTargetGasLimit = 0x0123456789ABCDEFUL;
 
         ForkchoiceUpdatedRequestWire wire = new()
         {
